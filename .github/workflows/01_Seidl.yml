@@ -1,0 +1,20 @@
+name: 01 - Hallo Linux
+
+on:
+  workflow_dispatch:
+
+jobs:
+  erkunden:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Begrüßung
+        run: echo "Hallo aus dem Linux-Runner!"
+
+      - name: Wer bin ich?
+        run: echo "Jonas"
+
+      - name: Welches datum formattiert?
+        run: date +%Y-%m-%d
+
+      - name: Welches Kernel läuft hier?
+        run: uname -r
